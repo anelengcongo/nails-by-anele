@@ -1,0 +1,20 @@
+body{
+    background-image: url(Picnails.jpg);
+    font-weight: bold; 
+/*makes image crisp and full*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+}
+
+/*this is how i fix my box baseline issue*/
+label, textarea {
+    vertical-align: top;
+}
