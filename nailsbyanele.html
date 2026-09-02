@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nails by Anele Survey</title>
+    <!--This is how you link your stylesheet-->
+    <link rel="stylesheet" href="style.css"> 
     
 </head>
 <body>
@@ -26,39 +28,56 @@
 <input type="number" id="number-label" min="10" max="100" placeholder="45"/>
 <br><br>
 
-<label for="dropdown">What would you like to drink?</label>
+<!--This is how you make a dropdown-->
+<label for="dropdown">Type of nails?</label>
 <select type="dropdown" id="dropdown" name="dropdown">
-<option value="tea">Tea</option>
-<option value="coffee">Coffee</option>
-<option value="water">Water</option>
-<option value="juice">Juice</option>
+<option value="acrylic">Acrylic</option>
+<option value="gelx">GelX</option>
+<option value="polygel">Poly Gel</option>
+<option value="geloverlay">Gel Overlay</option>
+</select>
+
+<label for="dropdown">Shape?</label>
+<select type="dropdown" id="dropdown" name="dropdown">
+<option value="square">Square</option>
+<option value="coffin">Coffin</option>
+<option value="almond">Almond</option>
+<option value="stiletto">Stiletto</option>
 </select>
 <br><br><br>
 
-<label>Type of nails:</label>
+<!--This is how you make a radio option-->
+<label>Would you like a drink?</label>
 <label>
-<input type="radio" name="nail-type" value="acrylic"/>
-Acrylic</label>
+<input type="radio" name="drink" value="water"/>
+Water</label>
 
 <label>
-<input type="radio" name="nail-type" value="GelX"/>
-GelX</label>
+<input type="radio" name="drink" value="juice"/>
+Juice</label>
 
 <label>
-<input type="radio" name="nail-type" value="PolyGel"/>
-PolyGel</label>
+<input type="radio" name="drink" value="tea"/>
+Tea</label>
 
 <label>
-<input type="radio" name="nail-type" value="gel"/>
-Gel Overlay </label>
+<input type="radio" name="drink" value="coffee"/>
+Coffee </label>
+
+<label>
+<input type="radio" name="drink" value="no"/>
+No, thank you. </label>
 <br>
 <br>
 
+<!--This is how you add a textbox-->
 <div>
     <label for="comments">Is there anything else you would like to add?</label>
     <textarea id="comments" rows="8" cols="10" placeholder="suggestions or addition comments..."></textarea>
 </div>
 <br>
+
+<!--This is how you add a button-->
 <button type="submit">Submit</button>
 
 </form>
